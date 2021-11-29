@@ -46,7 +46,7 @@ public class PasswordMain {
                 }
                 else {
                     try {throw new InvalidCharExceptions(passwords.substring(n, n + 1));
-                    } catch (InvalidCharExceptions e) { e.toString();     break;   }
+                    } catch (InvalidCharExceptions e) { e.toString(); }
                 }
             }
 
