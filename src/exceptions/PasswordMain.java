@@ -57,7 +57,8 @@ public class PasswordMain {
                 if (!hasNumber) { throw new NumberCriteriaException(passwords); }
                 else if (!hasLetter) { throw new LetterCriteriaException(passwords); }
                     else if (!hasSpecialCharacter) { throw new HasSpecialCharacterException(passwords); }
-                        } catch(NumberCriteriaException | LetterCriteriaException | HasSpecialCharacterException e) {
+                    else {System.out.println("Valid password"); }
+                   } catch(NumberCriteriaException | LetterCriteriaException | HasSpecialCharacterException e) {
                         System.out.println("Invalid password");
                         System.out.println(e.toString());
                     }
